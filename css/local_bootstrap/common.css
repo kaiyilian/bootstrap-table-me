@@ -1,6 +1,42 @@
+.pager_container {
+    float: right;
+}
+
+.pager_container .pagination {
+    margin: 8px 0;
+}
+
+.pagination > .active > a {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #567ec0;
+    border-color: #567ec0;
+}
+
+.pagination > li > a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #567ec0;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
 
 .table_container {
-    width: 80%;
-    margin: 20px auto;
+    margin: 40px auto 20px;
     text-align: center;
 }

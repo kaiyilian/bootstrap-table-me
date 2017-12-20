@@ -20,57 +20,63 @@
     <link href="../css/local_bootstrap/common.css" rel="stylesheet">
 
     <!-- cur Page -->
+    <link href="../css/local_bootstrap/bootstrap_basic.css" rel="stylesheet">
     <script src="../js/local_bootstrap/bootstrap_basic.js"></script>
 
 </head>
 <body>
 
-<div class="table_container">
+<section class="container bootstrap_basic_container">
 
-    <table class="table table-striped table-bordered table-hover dataTable">
+    <div class="table_container">
 
-        <thead>
-        <tr>
-            <td></td>
-            <td>姓名</td>
-            <td>手机号</td>
-            <td>入职时间</td>
-            <td>职位</td>
-            <td>备注</td>
-            <td>操作</td>
-        </tr>
-        </thead>
+        <table class="table table-striped table-bordered table-hover dataTable bootstrap_basic_table">
 
-        <tbody>
+            <thead>
+            <tr>
+                <td></td>
+                <td>姓名</td>
+                <td>手机号</td>
+                <td>入职时间</td>
+                <td>职位</td>
+                <td>备注</td>
+                <td>操作</td>
+            </tr>
+            </thead>
 
-        <tr class="item" data-id="12">
-            <td class="choose_item" onclick="bootstrap_basic.chooseItem(this)">
-                <img src="../image/UnChoose.png"/>
-            </td>
-            <td class="name">张三</td>
-            <td class="phone">手机号</td>
-            <td class="check_in_time">入职时间</td>
-            <td class="post">职位</td>
-            <td class="remark">备注</td>
-            <td class="operate">
+            <tbody>
 
-                <button class="btn btn-sm btn-success btn_modify">
-                    修改
-                </button>
+            <tr class="item" data-id="12">
+                <td class="choose_item" onclick="">
+                    <img src="../image/UnChoose.png"/>
+                </td>
+                <td class="name">张三</td>
+                <td class="phone">手机号</td>
+                <td class="check_in_time">入职时间</td>
+                <td class="post">职位</td>
+                <td class="remark">备注</td>
+                <td class="operate">
 
-                <button class="btn btn-sm btn-success btn_del">
-                    删除
-                </button>
+                    <button class="btn btn-sm btn-success btn_modify">
+                        修改
+                    </button>
 
-            </td>
-        </tr>
+                    <button class="btn btn-sm btn-success btn_del">
+                        删除
+                    </button>
 
-        </tbody>
+                </td>
+            </tr>
 
-    </table>
+            </tbody>
 
-</div>
+        </table>
 
+    </div>
+
+    <div class="pager_container"></div>
+
+</section>
 
 </body>
 </html>
